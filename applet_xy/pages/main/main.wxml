@@ -1,0 +1,41 @@
+<!--pages/main/main.wxml-->
+<view class="section">
+<progress class='hr' percent='0' stroke-width='1'></progress>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item" bindtap='bindViewTap'>
+      <view class='icon'>
+        <icon type='success' color='grey'></icon>
+      </view>
+      <view class='detail text'>
+        河南省郑州市荥阳市国泰路100号
+      </view>
+      <view class='right-detail text'>></view>
+    </view>
+    <view class="flex-item">
+      <view class='icon'>
+        <icon type='success' color='grey'></icon>
+      </view>
+      <view class='detail text'>
+        9:00-18:00
+      </view>
+    </view>
+    <view class="flex-item"  bindtap='onPhoneCall'>
+      <view class='icon'>
+        <icon type='success' color='grey'></icon>
+      </view>
+      <view class='detail text'>
+        13099990000
+      </view>
+      <view class='right-detail text'>></view>
+    </view>
+    <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
+      <view class='icon'>
+        <icon type='success' color='grey'></icon>
+      </view>
+      <view class='detail text'>
+        13099990001
+      </view>
+      <view class='right-detail text'>></view>
+    </view>
+  </view>
+</view>

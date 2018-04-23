@@ -1,0 +1,24 @@
+/* pages/main/main.wxss */
+.flex-item{
+  width: 100%;
+  height: 10%;
+  margin: 20rpx auto;
+}
+.hr{
+  margin: 10rpx auto;
+}
+.text{
+  color: grey;
+}
+.icon{
+  float: left;
+  margin-left: 20rpx;
+}
+.detail{
+  float: left;
+  margin-left: 10px;
+}
+.right-detail{
+  float: right;
+  margin-right: 20rpx;
+}
