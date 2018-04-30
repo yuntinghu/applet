@@ -7,10 +7,21 @@ Page({
   data: {
       phone:["13088881111","13088882222"]
   },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../maps/maps'
+  onMap:function () {
+    wx.getLocation({
+      type: "gcj02",//默认 wgs84 返回gps坐标，gcj02 返回可以用于wx.openLocation的坐标
+      success: function(res) {
+        wx.openLocation({
+          //@todo 写入地址经纬度以及路径名称
+          // latitude: res.latitude, //纬度
+          // longitude: res.longitude, //经度
+          latitude: 34.7977900000,//纬度
+          longitude: 113.3486700000, //经度
+          scale:28,//缩放比例
+          name:"河南省郑州市荥阳市恒力机械厂",
+          address:"河南省郑州市荥阳市城关乡李克寨村东南方向约0.94公里"
+        })
+      },
     })
   },
 

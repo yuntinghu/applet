@@ -1,13 +1,14 @@
 <!--pages/main/main.wxml-->
 <view class="section">
 <progress class='hr' percent='0' stroke-width='1'></progress>
+<button open-type="contact" >联系客服</button>
   <view class="flex-wrp" style="height: 300px;flex-direction:column;">
-    <view class="flex-item" bindtap='bindViewTap'>
+    <view class="flex-item" bindtap='onMap'>
       <view class='icon'>
         <icon type='success' color='grey'></icon>
       </view>
       <view class='detail text'>
-        河南省郑州市荥阳市国泰路100号
+        河南省郑州市荥阳市恒力机械厂
       </view>
       <view class='right-detail text'>></view>
     </view>
@@ -16,7 +17,7 @@
         <icon type='success' color='grey'></icon>
       </view>
       <view class='detail text'>
-        9:00-18:00
+        8:00-18:00
       </view>
     </view>
     <view class="flex-item"  bindtap='onPhoneCall'>
