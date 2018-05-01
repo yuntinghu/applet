@@ -4,8 +4,64 @@
   height: 10%;
   margin: 20rpx auto;
 }
+.top{
+  height: 150rpx;
+  margin: 0rpx 5%;
+  /* border: 1px solid rebeccapurple; */
+}
+.left-text{
+  width: 60%;
+  height: 100%;
+}
+.right-text{
+  float: right;
+  margin-right: 50rpx;
+  margin-top: -130rpx;
+}
+.title{
+  font-size: 16pt;
+}
+.title2{
+  font-size: 10pt;
+  margin:20rpx auto;
+  color: grey;
+}
+#circle{
+  width: 100rpx;
+  height: 100rpx;
+  /* background: red; */
+  -moz-border-radius:50rpx;
+  -webkit-border-radius:50rpx;
+  border-radius: 50rpx;
+}
+.tap{
+  width: 100%;
+}
+.video{
+  width: 90%;
+  margin: auto 5%;
+}
+.image-tap{
+  width:100%;
+}
+.image{
+  width: 29%;
+  height: 200rpx; 
+}
+.margin-left{
+  margin-left:1%;
+}
 .hr{
-  margin: 10rpx auto;
+  margin: 15rpx auto;
+  width: 100%;
+  height: 0px;
+  border-top:2rpx black dashed;
+  border-color: grey;
+}
+.message{
+  height: 60rpx;
+  font-size:12pt;
+  line-height: 60rpx;
 }
 .text{
   color: grey;
@@ -16,7 +72,7 @@
 }
 .detail{
   float: left;
-  margin-left: 10px;
+  margin-left: 10rpx;
 }
 .right-detail{
   float: right;

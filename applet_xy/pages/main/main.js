@@ -80,14 +80,18 @@ Page({
   onShareAppMessage: function () {
   
   },
-  onPhoneCall: function () {
+  tapName: function (event) {
+    console.log(event)
+  },
+
+  onPhoneCall: function (event) {
     wx.makePhoneCall({
-      phoneNumber: '13099990000' //仅为示例，并非真实的电话号码
+      phoneNumber: '13838197902' //仅为示例，并非真实的电话号码
     })
   },
   onPhoneCall2: function () {
     wx.makePhoneCall({
-      phoneNumber: '13099990001' //仅为示例，并非真实的电话号码
+      phoneNumber: '13071081895' //仅为示例，并非真实的电话号码
     })
   }
 })
