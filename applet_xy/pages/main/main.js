@@ -5,7 +5,60 @@ Page({
    * 页面的初始数据
    */
   data: {
-      phone:["13088881111","13088882222"]
+      phone:["13088881111","13088882222"],
+      imageData:[
+        {
+          key:1,
+          src:"http://7xo2nd.com1.z0.glb.clouddn.com/p1.jpeg",
+        },{
+          key: 2,
+          src:"http://7xo2nd.com1.z0.glb.clouddn.com/p2.jpeg",
+        },{
+          key: 3,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p3.jpeg",
+        },{
+          key: 4,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p4.jpeg",
+        }, {
+          key: 5,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p5.jpeg",
+        }, {
+          key: 6,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p6.jpeg",
+        }, {
+          key:7,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p7.jpeg",
+        }, {
+          key: 8,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p8.jpeg",
+        }, {
+          key: 9,
+          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p9.jpeg",
+        },
+      ],
+      imageList:[
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p1.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p2.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p3.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p4.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p5.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p6.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p7.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p8.jpeg",
+        "http://7xo2nd.com1.z0.glb.clouddn.com/p9.jpeg",
+      ],
+  },
+  showImage:function(event){
+    var src = event.target.dataset.src
+    wx.previewImage({
+      current: src,
+      urls: this.data.imageList,
+      success: function (res) { 
+        console.log("succes",res)
+      },
+      fail: function (res) { console.log("falil", res) },
+      complete: function (res) { console.log("complete", res)},
+    })
   },
   onMap:function () {
     wx.getLocation({
@@ -85,6 +138,11 @@ Page({
   },
 
   onPhoneCall: function (event) {
+    wx.makePhoneCall({
+      phoneNumber: '0371-64666648' //仅为示例，并非真实的电话号码
+    })
+  },
+  onPhoneCall1: function (event) {
     wx.makePhoneCall({
       phoneNumber: '13838197902' //仅为示例，并非真实的电话号码
     })

@@ -6,7 +6,7 @@
       <view class='title2'>养殖污水净化设备固液分离机</view>
     </view>
     <!-- <view class='right-text' id='circle'> -->
-      <image class='right-text'id='circle' src='../images/logo.jpeg'></image>
+      <image class='right-text'id='circle' src='../images/logo.png'></image>
     <!-- </view> -->
   </view>
   <view class='hr' />
@@ -22,34 +22,35 @@
       <view class='detail text'>
         河南省郑州市荥阳市恒力机械厂
       </view>
-      <view class='right-detail text'>></view>
+      <image class='icon right-detail text' src='../images/icon/more.png'></image>
     </view>
-    <view class="flex-item">
-      <image class='icon' src='../images/icon/clock.png'></image>
+    <view class="flex-item" bindtap='onPhoneCall'>
+      <image class='icon' src='../images/icon/phone.png'></image>
       <view class='detail text'>
-        8:00-18:00
+        0371-64666648
       </view>
+      <image class='icon right-detail text' src='../images/icon/more.png'></image> 
     </view>
-    <view class="flex-item"  bindtap='onPhoneCall'>
+    <view class="flex-item"  bindtap='onPhoneCall1'>
       <image class='icon' src='../images/icon/phone.png'></image>
       <view class='detail text'>
         13838197902
       </view>
-      <view class='right-detail text'>></view> 
+      <image class='icon right-detail text' src='../images/icon/more.png'></image>
     </view>
     <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
       <image class='icon' src='../images/icon/phone.png'></image> 
       <view class='detail text'>
         13071081895
       </view>
-       <view class='right-detail text'>></view> 
+       <image class='icon right-detail text' src='../images/icon/more.png'></image> 
     </view>
   <view class='flex-wrp'>
     <image class='icon' src='../images/icon/video.png'></image>
     <view class='detail text'>
       门店视频
     </view>
-    <video class='video' muted="true" src="http://7xo2nd.com1.z0.glb.clouddn.com/shipin.mp4"></video>
+    <video class='video' src="http://7xo2nd.com1.z0.glb.clouddn.com/shipin.mp4" controls poster="http://7xo2nd.com1.z0.glb.clouddn.com/suolue.jpg"></video>
   </view>
   <view class='flex-wrp'>
     <image class='icon' src='../images/icon/pic.png'></image>
@@ -57,15 +58,7 @@
       门店照片
     </view>
     <view class='image-tap'>
-      <image class="image " src='../images/p1.jpeg'></image>
-      <image class="image margin-left" src='../images/p2.jpeg'></image>
-      <image class="image margin-left" src='../images/p3.jpeg'></image>
-      <image class="image " src='../images/p4.jpeg'></image>
-      <image class="image margin-left" src='../images/p5.jpeg'></image>
-      <image class="image margin-left" src='../images/p6.jpeg'></image>
-      <image class="image " src='../images/p7.jpeg'></image>
-      <image class="image margin-left" src='../images/p8.jpeg'></image>
-      <image class="image margin-left" src='../images/p9.jpeg'></image>
+      <image wx:for="{{imageData}}" class='image margin-left' src='{{item.src}}' bindtap='showImage' data-src='{{item.src}}' data-key='{{item.key}}'></image>
     </view>
   </view>
   <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
