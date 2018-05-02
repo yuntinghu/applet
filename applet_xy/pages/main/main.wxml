@@ -49,7 +49,6 @@
     <view class='detail text'>
       门店视频
     </view>
-    <!-- <video class='video' muted="true" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video> -->
     <video class='video' muted="true" src="http://7xo2nd.com1.z0.glb.clouddn.com/shipin.mp4"></video>
   </view>
   <view class='flex-wrp'>
@@ -61,8 +60,22 @@
       <image class="image " src='../images/p1.jpeg'></image>
       <image class="image margin-left" src='../images/p2.jpeg'></image>
       <image class="image margin-left" src='../images/p3.jpeg'></image>
+      <image class="image " src='../images/p4.jpeg'></image>
+      <image class="image margin-left" src='../images/p5.jpeg'></image>
+      <image class="image margin-left" src='../images/p6.jpeg'></image>
+      <image class="image " src='../images/p7.jpeg'></image>
+      <image class="image margin-left" src='../images/p8.jpeg'></image>
+      <image class="image margin-left" src='../images/p9.jpeg'></image>
     </view>
   </view>
-  
+  <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
+    <image class='icon' src='../images/icon/ViewGallery.png'></image> 
+    <view class='text'>
+        公司简介
+    </view>
+    <view class='text textdesc'>
+       荥阳市恒力机械厂自成立以来，历经多年的艰苦拼搏、开拓进取，现已发展成为一家专业生产：牛羊喂料车、全日粮混合搅拌机、草料输送机、青贮铡草机、大型饲料机组、自动清粪机、粪便脱水机、固液分离机、养殖场粪便污水处理设备等系列设备的生产厂家；公司始终坚持“以市场发展为导向，以客户需求为目标”的经营策略。秉承现代企业的科学管理方法，精工制造，不断创新，迅速发展壮大。
+    </view>
+    </view>
   </view>
 </view>
