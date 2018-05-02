@@ -2,78 +2,65 @@
 <view class="section">
   <view class='top'>
     <view class='left-text'>
-      <view class='title'>恒力机械厂</view>
-      <view class='title2'>养猪养牛器械</view>
+      <view class='title'>荥阳市恒力机械厂</view>
+      <view class='title2'>养殖污水净化设备固液分离机</view>
     </view>
     <!-- <view class='right-text' id='circle'> -->
-      <image class='right-text'id='circle' src='../images/icon.svg'></image>
+      <image class='right-text'id='circle' src='../images/logo.jpeg'></image>
     <!-- </view> -->
   </view>
   <view class='hr' />
   <view class="flex-wrp message" style="flex-direction:column;">
-    <view class='icon'>
-        <icon type='success' color='grey'></icon>
-    </view>
+    <image class='icon-message' src='../images/icon/comments.png'></image>
     <view class='detail'>人工客服</view>
     <button class='right-detail' open-type="contact" size='mini' type='success'plain="true">联系</button>
   </view>
   <view class='hr' />
 <view class="flex-wrp" style="height: 300px;flex-direction:column;">
     <view class="flex-item" bindtap='onMap'>
-      <view class='icon'>
-        <icon type='success' color='grey'></icon>
-      </view>
+      <image class='icon' src='../images/icon/map.png'></image>
       <view class='detail text'>
         河南省郑州市荥阳市恒力机械厂
       </view>
       <view class='right-detail text'>></view>
     </view>
     <view class="flex-item">
-      <view class='icon'>
-        <icon type='waiting' color='grey'></icon>
-      </view>
+      <image class='icon' src='../images/icon/clock.png'></image>
       <view class='detail text'>
         8:00-18:00
       </view>
     </view>
     <view class="flex-item"  bindtap='onPhoneCall'>
-      <view class='icon'>
-        <icon type='success' color='grey'></icon>
-      </view>
+      <image class='icon' src='../images/icon/phone.png'></image>
       <view class='detail text'>
         13838197902
       </view>
-      <view class='right-detail text'>></view>
+      <view class='right-detail text'>></view> 
     </view>
     <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
-      <view class='icon'>
-        <icon type='success' color='grey'></icon>
-      </view>
+      <image class='icon' src='../images/icon/phone.png'></image> 
       <view class='detail text'>
         13071081895
       </view>
-      <view class='right-detail text'>></view>
+       <view class='right-detail text'>></view> 
     </view>
   <view class='flex-wrp'>
-    <view class='icon'>
-      <icon type='success' color='grey'></icon>
-    </view>
+    <image class='icon' src='../images/icon/video.png'></image>
     <view class='detail text'>
       门店视频
     </view>
-    <video class='video' muted="true" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
+    <!-- <video class='video' muted="true" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video> -->
+    <video class='video' muted="true" src="http://7xo2nd.com1.z0.glb.clouddn.com/shipin.mp4"></video>
   </view>
   <view class='flex-wrp'>
-    <view class='icon'>
-      <icon type='success' color='grey'></icon>
-    </view>
+    <image class='icon' src='../images/icon/pic.png'></image>
     <view class='text'>
       门店照片
     </view>
     <view class='image-tap'>
-      <image class="image" src='../images/1.jpg'></image>
-      <image class="image margin-left" src='../images/2.jpg'></image>
-      <image class="image margin-left" src='../images/3.jpg'></image>
+      <image class="image " src='../images/p1.jpeg'></image>
+      <image class="image margin-left" src='../images/p2.jpeg'></image>
+      <image class="image margin-left" src='../images/p3.jpeg'></image>
     </view>
   </view>
   

@@ -10,7 +10,7 @@
   /* border: 1px solid rebeccapurple; */
 }
 .left-text{
-  width: 60%;
+  width: 65%;
   height: 100%;
 }
 .right-text{
@@ -66,13 +66,20 @@
 .text{
   color: grey;
 }
+.icon-message{
+  float: left;
+  margin: 10rpx 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
 .icon{
   float: left;
-  margin-left: 20rpx;
+  margin: 10rpx 20rpx;
+  width: 30rpx;
+  height: 30rpx;
 }
 .detail{
   float: left;
-  margin-left: 10rpx;
 }
 .right-detail{
   float: right;
