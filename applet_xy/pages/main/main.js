@@ -6,49 +6,22 @@ Page({
    */
   data: {
       phone:["13088881111","13088882222"],
-      imageData:[
-        {
-          key:1,
-          src:"http://7xo2nd.com1.z0.glb.clouddn.com/p1.jpeg",
-        },{
-          key: 2,
-          src:"http://7xo2nd.com1.z0.glb.clouddn.com/p2.jpeg",
-        },{
-          key: 3,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p3.jpeg",
-        },{
-          key: 4,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p4.jpeg",
-        }, {
-          key: 5,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p5.jpeg",
-        }, {
-          key: 6,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p6.jpeg",
-        }, {
-          key:7,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p7.jpeg",
-        }, {
-          key: 8,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p8.jpeg",
-        }, {
-          key: 9,
-          src: "http://7xo2nd.com1.z0.glb.clouddn.com/p9.jpeg",
-        },
-      ],
       imageList:[
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p1.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p2.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p3.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p4.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p5.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p6.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p7.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p8.jpeg",
-        "http://7xo2nd.com1.z0.glb.clouddn.com/p9.jpeg",
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p1.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p2.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p3.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p4.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p5.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p6.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p7.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p8.jpeg?v=" + Math.random() / 9999,
+        "http://7xqe2i.com1.z0.glb.clouddn.com/p9.jpeg?v=" + Math.random() / 9999,
       ],
+      viedoUrl: "http://7xqe2i.com1.z0.glb.clouddn.com/shipin.mp4?v=" + Math.random() / 9999,
+      suolueUrl: "http://7xqe2i.com1.z0.glb.clouddn.com/suolue.png?v=" + Math.random() / 9999,
   },
   showImage:function(event){
+    console.log(2222)
     var src = event.target.dataset.src
     wx.previewImage({
       current: src,
