@@ -3,7 +3,7 @@
   <view class='top'>
     <view class='left-text'>
       <view class='title'>荥阳市恒力机械厂</view>
-      <view class='title2'>养殖污水净化设备固液分离机</view>
+      <view class='title2'>养殖设备牛羊设备撒料车成套设备</view>
     </view>
     <!-- <view class='right-text' id='circle'> -->
       <image class='right-text'id='circle' src='../images/logo.png'></image>
@@ -41,7 +41,7 @@
     <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
       <image class='icon' src='../images/icon/phone.png'></image> 
       <view class='detail text'>
-        13071081895
+        13071081851
       </view>
        <image class='icon right-detail text' src='../images/icon/more.png'></image> 
     </view>
@@ -67,7 +67,7 @@
         公司简介
     </view>
     <view class='text textdesc'>
-      青山绿水是我们的梦，保护环境是企业的光荣使命。恒力机械响应国家环保政策的号召，研制出了一套养殖场粪便污水处理设备，该设备利用了先进的生物降解技术和水处理净化技术，使养殖场摆脱了臭气熏天的现状，呈现风清水净，空气清新的环境，使养殖场建成美丽牧场，解决了养殖场的环保难题。
+      荥阳市恒力机械厂专业生产：牛羊喂料车、全日粮混合搅拌机、草料输送机、青贮铡草机、大型饲料机组、取草机、自动清粪机、粪便脱水机、固液分离机、养殖场粪便污水处理设备等系列设备的生产厂家；公司始终坚持“以市场发展为导向，以客户需求为目标”的经营策略。秉承现代企业的科学管理方法，精工制造，不断创新，迅速发展壮大。
     </view>
     <view class='footer'></view>
     </view>

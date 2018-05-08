@@ -7,21 +7,20 @@ Page({
   data: {
       phone:["13088881111","13088882222"],
       imageList:[
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p1.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p2.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p3.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p4.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p5.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p6.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p7.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p8.jpeg?v=" + Math.random() / 9999,
-        "http://7xqe2i.com1.z0.glb.clouddn.com/p9.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t1.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t2.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t3.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t4.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t5.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t6.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t7.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t8.jpeg?v=" + Math.random() / 9999,
+        "http://p8e1ddj61.bkt.clouddn.com/applet2/t9.png?v=" + Math.random() / 9999,
       ],
-      viedoUrl: "http://7xqe2i.com1.z0.glb.clouddn.com/shipin.mp4?v=" + Math.random() / 9999,
-      suolueUrl: "http://7xqe2i.com1.z0.glb.clouddn.com/suolue.png?v=" + Math.random() / 9999,
+      viedoUrl: "http://p8e1ddj61.bkt.clouddn.com/applet2/shipin.mp4?v=" + Math.random() / 9999,
+      suolueUrl: "http://p8e1ddj61.bkt.clouddn.com/applet2/suolue.jpg?v=" + Math.random() / 9999,
   },
   showImage:function(event){
-    console.log(2222)
     var src = event.target.dataset.src
     wx.previewImage({
       current: src,
@@ -122,7 +121,7 @@ Page({
   },
   onPhoneCall2: function () {
     wx.makePhoneCall({
-      phoneNumber: '13071081895' //仅为示例，并非真实的电话号码
+      phoneNumber: '13071081851' //仅为示例，并非真实的电话号码
     })
   }
 })
