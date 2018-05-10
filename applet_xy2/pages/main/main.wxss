@@ -1,0 +1,93 @@
+/* pages/main/main.wxss */
+.flex-item{
+  width: 100%;
+  height: 10%;
+  margin: 20rpx auto;
+}
+.top{
+  height: 150rpx;
+  margin: 0rpx 5%;
+  /* border: 1px solid rebeccapurple; */
+}
+.left-text{
+  width: 65%;
+  height: 100%;
+}
+.right-text{
+  float: right;
+  margin-right: 50rpx;
+  margin-top: -130rpx;
+}
+.title{
+  font-size: 16pt;
+}
+.title2{
+  font-size: 10pt;
+  margin:20rpx auto;
+  color: grey;
+}
+#circle{
+  width: 100rpx;
+  height: 100rpx;
+  /* background: red; */
+  /* -moz-border-radius:50rpx;
+  -webkit-border-radius:50rpx;
+  border-radius: 50rpx; */
+}
+.tap{
+  width: 100%;
+}
+.video{
+  width: 90%;
+  margin: auto 5%;
+}
+.image-tap{
+  margin: 1% 5%;
+  width:90%;
+}
+.image{
+  width: 31%;
+  height: 200rpx; 
+}
+.margin-left{
+  margin-left:2%;
+}
+.hr{
+  margin: 15rpx auto;
+  width: 100%;
+  height: 0px;
+  border-top:2rpx black dashed;
+  border-color: grey;
+}
+.message{
+  height: 60rpx;
+  font-size:12pt;
+  line-height: 60rpx;
+}
+.text{
+  color: grey;
+}
+.textdesc{
+  width: 90%;
+  margin: 1% 5%;
+  font-size:10pt;
+}
+.icon-message{
+  float: left;
+  margin: 10rpx 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.icon{
+  float: left;
+  margin: 10rpx 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.detail{
+  float: left;
+}
+.right-detail{
+  float: right;
+  margin-right: 20rpx;
+}
