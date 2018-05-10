@@ -3,13 +3,14 @@
   <view class='top'>
     <view class='left-text'>
       <view class='title'>荥阳市恒力机械厂</view>
-      <view class='title2'>养殖污水净化设备固液分离机</view>
+      <view class='title2'>养殖设备牛羊设备撒料车成套设备</view>
     </view>
     <!-- <view class='right-text' id='circle'> -->
       <image class='right-text'id='circle' src='../images/logo.png'></image>
     <!-- </view> -->
   </view>
   <view class='hr' />
+
     <view class='flex-wrp'>
     <image class='icon' src='../images/icon/video.png'></image>
     <view class='detail text'>
@@ -23,10 +24,11 @@
       产品照片
     </view>
     <view class='image-tap'>
-      <image wx:for="{{imageData}}" class='image margin-left' src='{{item.src}}' bindtap='showImage' data-src='{{item.src}}' data-key='{{item.key}}'></image>
+      <image wx:for="{{imageList}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
     </view>
   </view>
   <view class='hr' />
+
   <view class="flex-wrp message" style="flex-direction:column;">
     <image class='icon-message' src='../images/icon/comments.png'></image>
     <view class='detail'>人工客服</view>
@@ -62,15 +64,14 @@
       </view>
        <image class='icon right-detail text' src='../images/icon/more.png'></image> 
     </view>
-
-  <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
     <image class='icon' src='../images/icon/ViewGallery.png'></image> 
     <view class='text'>
         公司简介
     </view>
     <view class='text textdesc'>
-       荥阳市恒力机械厂自成立以来，历经多年的艰苦拼搏、开拓进取，现已发展成为一家专业生产：牛羊喂料车、全日粮混合搅拌机、草料输送机、青贮铡草机、大型饲料机组、自动清粪机、粪便脱水机、固液分离机、养殖场粪便污水处理设备等系列设备的生产厂家；公司始终坚持“以市场发展为导向，以客户需求为目标”的经营策略。秉承现代企业的科学管理方法，精工制造，不断创新，迅速发展壮大。
+      荥阳市恒力机械厂专业生产：牛羊喂料车、全日粮混合搅拌机、草料输送机、青贮铡草机、大型饲料机组、取草机、自动清粪机、粪便脱水机、固液分离机、养殖场粪便污水处理设备等系列设备的生产厂家；公司始终坚持“以市场发展为导向，以客户需求为目标”的经营策略。秉承现代企业的科学管理方法，精工制造，不断创新，迅速发展壮大。
     </view>
+    <view class='footer'></view>
     </view>
-  </view>
+
 </view>

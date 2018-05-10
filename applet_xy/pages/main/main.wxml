@@ -48,27 +48,28 @@
   <view class='flex-wrp'>
     <image class='icon' src='../images/icon/video.png'></image>
     <view class='detail text'>
-      门店视频
+      现场视频
     </view>
-    <video class='video' src="http://7xo2nd.com1.z0.glb.clouddn.com/shipin.mp4" controls poster="http://7xo2nd.com1.z0.glb.clouddn.com/suolue.jpg"></video>
+    <video class='video' src='{{viedoUrl}}' poster='{{suolueUrl}}'></video>
   </view>
   <view class='flex-wrp'>
     <image class='icon' src='../images/icon/pic.png'></image>
     <view class='text'>
-      门店照片
+      产品图片
     </view>
     <view class='image-tap'>
-      <image wx:for="{{imageData}}" class='image margin-left' src='{{item.src}}' bindtap='showImage' data-src='{{item.src}}' data-key='{{item.key}}'></image>
+      <image wx:for="{{imageList}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}'></image>
     </view>
   </view>
-  <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
+  <view class="flex-item">
     <image class='icon' src='../images/icon/ViewGallery.png'></image> 
     <view class='text'>
         公司简介
     </view>
     <view class='text textdesc'>
-       荥阳市恒力机械厂自成立以来，历经多年的艰苦拼搏、开拓进取，现已发展成为一家专业生产：牛羊喂料车、全日粮混合搅拌机、草料输送机、青贮铡草机、大型饲料机组、自动清粪机、粪便脱水机、固液分离机、养殖场粪便污水处理设备等系列设备的生产厂家；公司始终坚持“以市场发展为导向，以客户需求为目标”的经营策略。秉承现代企业的科学管理方法，精工制造，不断创新，迅速发展壮大。
+      青山绿水是我们的梦，保护环境是企业的光荣使命。恒力机械响应国家环保政策的号召，研制出了一套养殖场粪便污水处理设备，该设备利用了先进的生物降解技术和水处理净化技术，使养殖场摆脱了臭气熏天的现状，呈现风清水净，空气清新的环境，使养殖场建成美丽牧场，解决了养殖场的环保难题。
     </view>
+    <view class='footer'></view>
     </view>
   </view>
 </view>
