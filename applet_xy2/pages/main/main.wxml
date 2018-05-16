@@ -24,7 +24,12 @@
       产品照片
     </view>
     <view class='image-tap'>
-      <image wx:for="{{imageList}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
+      <image wx:for="{{imageList}}" wx:if="{{index==0}}" class='image' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
+      <image wx:for="{{imageList}}" wx:if="{{index==1 || index==2}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
+      <image wx:for="{{imageList}}" wx:if="{{index==3}}" class='image' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
+      <image wx:for="{{imageList}}" wx:if="{{index==4 || index==5}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
+      <image wx:for="{{imageList}}" wx:if="{{index==6}}" class='image' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
+      <image wx:for="{{imageList}}" wx:if="{{index==7 || index==8}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}' data-key='{{item}}'></image>
     </view>
   </view>
   <view class='hr' />
