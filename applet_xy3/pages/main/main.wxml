@@ -1,0 +1,75 @@
+<!--pages/main/main.wxml-->
+<view class="section">
+  <view class='top'>
+    <view class='left-text'>
+      <view class='title'>荥阳市恒力机械厂</view>
+      <view class='title2'>养猪设备饲料加工设备</view>
+    </view>
+    <!-- <view class='right-text' id='circle'> -->
+      <image class='right-text'id='circle' src='{{logoURL}}'></image>
+    <!-- </view> -->
+  </view>
+  <view class='hr' />
+  <view class="flex-wrp message" style="flex-direction:column;">
+    <image class='icon-message' src='../images/icon/comments.png'></image>
+    <view class='detail'>人工客服</view>
+    <button class='right-detail' open-type="contact" size='mini' type='success'plain="true">管理员</button>
+  </view>
+  <view class='hr' />
+<view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item" bindtap='onMap'>
+      <image class='icon' src='../images/icon/map.png'></image>
+      <view class='detail text'>
+        河南省郑州市荥阳市恒力机械厂
+      </view>
+      <image class='icon right-detail text' src='../images/icon/more.png'></image>
+    </view>
+    <view class="flex-item"  bindtap='onPhoneCall2' data-number='13088888'>
+      <image class='icon' src='../images/icon/phone.png'></image> 
+      <view class='detail text'>
+        13071081895
+      </view>
+       <image class='icon right-detail text' src='../images/icon/more.png'></image> 
+    </view>
+    <view class="flex-item"  bindtap='onPhoneCall1'>
+      <image class='icon' src='../images/icon/phone.png'></image>
+      <view class='detail text'>
+        13071081851
+      </view>
+      <image class='icon right-detail text' src='../images/icon/more.png'></image>
+    </view>
+    <view class="flex-item" bindtap='onPhoneCall'>
+      <image class='icon' src='../images/icon/phone.png'></image>
+      <view class='detail text'>
+        0371-64666648
+      </view>
+      <image class='icon right-detail text' src='../images/icon/more.png'></image> 
+    </view>
+  <view class='flex-wrp'>
+    <image class='icon' src='../images/icon/video.png'></image>
+    <view class='detail text'>
+      现场视频
+    </view>
+    <video class='video' src='{{viedoUrl}}' poster='{{suolueUrl}}'></video>
+  </view>
+  <view class='flex-wrp'>
+    <image class='icon' src='../images/icon/pic.png'></image>
+    <view class='text'>
+      产品图片
+    </view>
+    <view class='image-tap'>
+      <image wx:for="{{imageList}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}'></image>
+    </view>
+  </view>
+  <view class="flex-item">
+    <image class='icon' src='../images/icon/ViewGallery.png'></image> 
+    <view class='text'>
+        公司简介
+    </view>
+    <view class='text textdesc'>
+     荥阳市恒力机械厂专业生产：饲料加工设备、大型饲料机组、养猪设备、母猪产床、定位栏、保育床、自动清粪机、粪便脱水机、固液分离机、养殖场粪便污水处理设备等系列设备的生产厂家；公司始终坚持“以市场发展为导向，以客户需求为目标”的经营策略。秉承现代企业的科学管理方法，精工制造，不断创新，迅速发展壮大。
+     </view>
+    <view class='footer'></view>
+    </view>
+  </view>
+</view>
