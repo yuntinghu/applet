@@ -20,6 +20,7 @@ Page({
       viedoUrl: "http://p8e1ddj61.bkt.clouddn.com/applet3/shipin.mp4?v=" + Math.random() / 9999,
       suolueUrl: "http://p8e1ddj61.bkt.clouddn.com/applet3/fengmian.png?v=" + Math.random() / 9999,
       logoURL: "http://p8e1ddj61.bkt.clouddn.com/applet3/logo.png?v=" + Math.random() / 9999,
+      leftWidth:false,
   },
   showImage:function(event){
     var src = event.target.dataset.src
@@ -55,7 +56,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(222222)
   },
 
   /**
@@ -69,7 +70,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var _this = this;
+    var query = wx.createSelectorQuery();
+    query.select('#li1').boundingClientRect();
+    query.exec(function(res){
+      if (res[0].left>30){
+        _this.setData({ leftWidth:true})
+      }
+    })
   },
 
   /**
