@@ -57,9 +57,17 @@
     <view class='text'>
       产品图片
     </view>
-    <view class='image-tap'>
-      <image wx:for="{{imageList}}" class='image margin-left' src='{{item}}' bindtap='showImage' data-src='{{item}}'></image>
+    <view id="container">  
+    <view id="li1" class='left' wx:for="{{imageList}}" wx:if="{{index==0 && leftWidth}}">
+      <image src='{{item}}' class='new_image' bindtap='showImage' data-src='{{item}}'></image>
+    </view> 
+    <view id="li1" class='left2'  wx:for="{{imageList}}" wx:if="{{index==0 && !leftWidth}}">
+      <image src='{{item}}' class='new_image' bindtap='showImage' data-src='{{item}}'></image>
     </view>
+    <view id="li" wx:for="{{imageList}}" wx:if="{{index!=0}}">
+      <image src='{{item}}' class='new_image' bindtap='showImage' data-src='{{item}}'></image>
+    </view> 
+  </view> 
   </view>
   <view class="flex-item">
     <image class='icon' src='../images/icon/ViewGallery.png'></image> 

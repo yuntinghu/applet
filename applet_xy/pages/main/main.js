@@ -68,7 +68,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var _this = this;
+    var query = wx.createSelectorQuery();
+    query.select('#li1').boundingClientRect();
+    query.exec(function (res) {
+      if (res[0].left > 30) {
+        _this.setData({ leftWidth: true })
+      }
+    })
   },
 
   /**
