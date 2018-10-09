@@ -16,7 +16,7 @@
     <view class='detail text'>
       现场视频
     </view>
-    <video class='video' src="http://7xo2nd.com1.z0.glb.clouddn.com/shipin.mp4" controls poster="http://7xo2nd.com1.z0.glb.clouddn.com/suolue.jpg"></video>
+    <video class='video' src="{{viedoUrl}}" controls poster="{{suolueUrl}}"></video>
   </view>
   <view class='flex-wrp'>
     <image class='icon' src='../images/icon/pic.png'></image>
