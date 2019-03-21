@@ -18,7 +18,7 @@ Page({
       ],
     viedoUrl: "https://raw.githubusercontent.com/yuntinghu/applet/master/images/applet3/shipin.mp4?v=" + Math.random() / 9999,
     suolueUrl: "https://raw.githubusercontent.com/yuntinghu/applet/master/images/applet3/suolue.png?v=" + Math.random() / 9999,
-    logoURL: "https://raw.githubusercontent.com/yuntinghu/applet/master/images/applet3/logo.png?v=" + Math.random() / 9999,
+    logoURL: "../images/logo.png?v=" + Math.random() / 9999,
       leftWidth:false,
   },
   showImage:function(event){
